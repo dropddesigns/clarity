@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLARITY</title>
+    <title>Subjects - CLARITY</title>
 
     <!-- Google Tag Manager -->
     <script>
@@ -26,10 +26,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- Link to the external main.js -->
-    <script src="assets/js/main.js" defer></script>
+    <link href="assets/css/custom.css" rel="stylesheet" />
   </head>
-  <body class="d-flex flex-column vh-100 justify-content-between px-5">
+
+  <body class="d-flex flex-column px-5">
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
@@ -41,32 +41,11 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="text-center mt-5">
-      <h1>Welcome to EduHub</h1>
+    <div class="container mt-5">
+      <h1>Subjects with Grades</h1>
+      <div class="row mt-4" id="subjectsList"></div>
     </div>
 
-    <h2 class="align-self-center justify-self-center">
-      Please select your role
-    </h2>
-    <div
-      class="d-flex flex-column align-items-center justify-content-center flex-grow-1"
-    >
-      <!-- Buttons will set role in sessionStorage and redirect -->
-      <button
-        class="w-25 mb-3 btn btn-primary"
-        onclick="selectRole('Principal')"
-      >
-        Principal
-      </button>
-      <button class="w-25 mb-3 btn btn-primary" onclick="selectRole('Teacher')">
-        Teacher
-      </button>
-      <button class="w-25 mb-3 btn btn-primary" onclick="selectRole('Student')">
-        Student
-      </button>
-      <button class="w-25 mb-3 btn btn-primary" onclick="selectRole('Parent')">
-        Parent
-      </button>
-    </div>
+    <script src="assets/js/subjects.js"></script>
   </body>
 </html>
