@@ -1,0 +1,49 @@
+{
+    "students": [
+      {
+        "name": "John Doe",
+        "address": "123 Main St, KL",
+        "subjects": [
+          { "name": "Mathematics", "teacher": "Ms. Smith", "grade": "A" },
+          { "name": "English", "teacher": "Mr. Johnson", "grade": "B+" },
+          { "name": "Science", "teacher": "Dr. Brown", "grade": "A-" }
+        ],
+        "username": "john_doe",
+        "password": "password123"
+      },
+      {
+        "name": "Jane Smith",
+        "address": "456 Elm St, KL",
+        "subjects": [
+          { "name": "Mathematics", "teacher": "Ms. Smith", "grade": "A-" },
+          { "name": "History", "teacher": "Mr. White", "grade": "B" },
+          { "name": "Physics", "teacher": "Dr. Green", "grade": "A+" }
+        ],
+        "username": "jane_smith",
+        "password": "password456"
+      }
+    ],
+    "subjects": [
+      { "name": "Mathematics", "teacher": "Ms. Smith" },
+      { "name": "English", "teacher": "Mr. Johnson" },
+      { "name": "Science", "teacher": "Dr. Brown" },
+      { "name": "History", "teacher": "Mr. White" },
+      { "name": "Physics", "teacher": "Dr. Green" }
+    ],
+    "teachers": [
+      { "name": "Ms. Smith", "subject": "Mathematics", "username": "ms_smith", "password": "math123" },
+      { "name": "Mr. Johnson", "subject": "English", "username": "mr_johnson", "password": "english123" },
+      { "name": "Dr. Brown", "subject": "Science", "username": "dr_brown", "password": "science123" },
+      { "name": "Mr. White", "subject": "History", "username": "mr_white", "password": "history123" },
+      { "name": "Dr. Green", "subject": "Physics", "username": "dr_green", "password": "physics123" }
+    ],
+    "principals": [
+      { "name": "Principal Clark", "username": "clark", "password": "admin123" },
+      { "name": "Principal Lane", "username": "lane", "password": "admin456" }
+    ],
+    "parents": [
+      { "name": "Jane Doe", "children": ["John Doe"] },
+      { "name": "Michael Smith", "children": ["Jane Smith"] }
+    ]
+  }
+  
