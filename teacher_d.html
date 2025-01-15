@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - CLARITY</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N37C5MWB");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body class="d-flex flex-column px-5">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N37C5MWB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container-fluid">
+      <!-- Header -->
+      <div class="text-center mt-5">
+        <h1>Welcome, Teacher</h1>
+        <p>Here’s your dashboard</p>
+      </div>
+
+      <div class="row mt-4">
+        <!-- Left Sidebar Navigation -->
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="subjects.html" class="list-group-item list-group-item-action">Subjects</a>
+            <a href="students.html" class="list-group-item list-group-item-action">Students</a>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-md-9">
+          <!-- Teacher Details -->
+          <div id="teacherDetails" class="mb-4">
+            <h3>Teacher Details</h3>
+            <ul class="list-group">
+              <li class="list-group-item">Name: <span id="teacherName">John Smith</span></li>
+              <li class="list-group-item">Department: <span id="teacherDepartment">Mathematics</span></li>
+            </ul>
+          </div>
+
+          <!-- Subjects with Students Section -->
+          <div id="subjectsSection">
+            <h3>Subjects</h3>
+            <div id="subjectsList" class="row">
+              <!-- Subjects will be dynamically listed here as cards -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/teacher.js"></script>
+  </body>
+</html>
